@@ -52,20 +52,4 @@ public class RestAssuredSteps {
 
         return response.getBody().asString();
     }
-//    public static <T> T sendPostRequest(String endpoint, Object bodyData, Class<T> responseClass) {
-//        Response response = (Response) RestAssured
-//                .given()
-//                .contentType(ContentType.JSON)
-//                .when()
-//                .body(bodyData)
-//                .post(buildPostUrl(endpoint))
-//                .then().log().all();
-//
-//        assertEquals(HttpStatus.SC_OK, response.statusCode(),
-//                "Expected status code does not match the actual status code.");
-//
-//        String responseBody = response.getBody().asString();
-//        ObjectMapper objectMapper = new ObjectMapper();
-//        return objectMapper.readValue(responseBody, responseClass);
-//    }
 }
